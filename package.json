@@ -1,6 +1,10 @@
 {
   "name": "root",
+<<<<<<< HEAD
   "version": "3.0.0",
+=======
+  "version": "0.6.4",
+>>>>>>> eagleeye/master
   "dependencies": {
     "murl": "0.4.x",
     "protein": "0.5.x",

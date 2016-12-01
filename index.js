@@ -198,7 +198,7 @@ Root.prototype.route = function(request, response, callback) {
 
 	callback = callback || function(err, message) {
 		if (err) return response.error(err, message);
-		response.error(404, 'cannot find ' + url + '\n');
+		response.error(404, 'cannot find ' + request.method + ' ' + url + '\n');
 	};
 
 	var loop = function(err) {
@@ -234,11 +234,11 @@ var rewriter = function(app, pattern, fn) {
 		app.route(request, response, next);
 	};
 
-	return function(request, response, next) {
+	return function(request, response) {
 		var index = request.url.indexOf('?');
 		request.url = encodeURI(pattern(request.params)) + (index === -1 ? '' : request.url.substring(index));
 		request._url = undefined; // reset cache
-		fn(request, response, next);
+		fn(request, response);
 	};
 };
 

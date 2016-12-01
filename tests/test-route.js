@@ -23,7 +23,7 @@ app2.get('/', function(req, res, next) {
 });
 
 app1.listen(9999, function() {
-	exec('curl localhost:9999/; curl localhost:9999/?foo=bar', function() {
+	exec('curl localhost:9999/ && curl localhost:9999/?foo=bar', function() {
 		assert.equal(ran, 4);
 		process.exit(0);
 	});

@@ -34,7 +34,7 @@ app.error(function(req, res, options) {
 });
 
 app.listen(9999, function() {
-	exec('curl localhost:9999/404; curl localhost:9999/400; curl localhost:9999/401', function() {
+	exec('curl localhost:9999/404 && curl localhost:9999/400 && curl localhost:9999/401', function() {
 		assert.equal(ran, 3);
 		process.exit(0);
 	});

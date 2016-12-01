@@ -32,7 +32,7 @@ app.get(function(req, res) {
 });
 
 app.listen(9999, function() {
-	exec('curl localhost:9999; curl 127.0.0.1:9999; curl localhost:9999/test', function() {
+	exec('curl localhost:9999; curl 127.0.0.1:9999 && curl localhost:9999/test', function() {
 		assert.ok(hitLocalhost);
 		assert.ok(hitIP);
 		assert.ok(hitPart);

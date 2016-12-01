@@ -15,10 +15,12 @@ app1.get('/static-file.html', function(request, response) {
 	response.end();
 });
 
-app2.get('/', '/static-file.html');
+app2.get('/', '/static-file.html', function(request, response) {
+	response.end();
+});
 
 app1.listen(9999, function() {
-	exec('curl localhost:9999;', function() {
+	exec('curl localhost:9999/static-file.html', function() {
 		assert.equal(ran, 2);
 		process.exit(0);
 	});

@@ -26,7 +26,7 @@ app.get(function(req, res, next) {
 });
 
 app.listen(9999, function() {
-	exec('curl localhost:9999/foo; curl localhost:9999/foobar', function() {
+	exec('curl localhost:9999/foo && curl localhost:9999/foobar', function() {
 		assert.ok(plugin);
 		assert.equal(ran, 3);
 		process.exit(0);

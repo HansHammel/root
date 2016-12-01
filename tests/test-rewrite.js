@@ -23,7 +23,7 @@ app.get('/a/{data}', '/b/{data}', function(req, res) {
 });
 
 app.listen(9999, function() {
-	exec('curl localhost:9999/; curl localhost:9999/bar; curl localhost:9999/a/foobar', function() {
+	exec('curl localhost:9999/ && curl localhost:9999/bar && curl localhost:9999/a/foobar', function() {
 		assert.equal(ran, 3);
 		process.exit(0);
 	});

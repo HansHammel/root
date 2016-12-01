@@ -12,7 +12,7 @@ app.get(function(req, res, next) {
 
 app.listen(9999, function() {
 	app.listen(10000, function() {
-		exec('curl localhost:9999; curl localhost:10000;', function() {
+		exec('curl localhost:9999 && curl localhost:10000;', function() {
 			assert.equal(ran, 2);
 			process.exit(0);
 		});

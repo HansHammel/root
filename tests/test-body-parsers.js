@@ -35,7 +35,7 @@ app.post('/form', function(req, res, next) {
 });
 
 app.listen(9999, function() {
-	exec('curl -d body localhost:9999/body; curl -d \'{"foo":"bar"}\' localhost:9999/json; curl -d \'false\' localhost:9999/jsonbool; curl -d "bar=baz" localhost:9999/form', function() {
+	exec('curl -d body localhost:9999/body && curl -d \'{"foo":"bar"}\' localhost:9999/json  && curl -d \'false\' localhost:9999/jsonbool && curl -d "bar=baz" localhost:9999/form', function() {
 		assert.equal(ran, 4);
 		process.exit(0);
 	});

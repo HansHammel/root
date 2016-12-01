@@ -1,6 +1,7 @@
 var protein = require('protein');
 var murl = require('murl');
 var address = require('network-address');
+var EventEmitter  = require('events');
 
 var METHODS = 'GET HEAD POST PUT DELETE PATCH OPTIONS'.split(' ');
 var ALIASES = {};
@@ -24,7 +25,7 @@ var Root = function() {
 	this.setMaxListeners(0);
 };
 
-Root.prototype.__proto__ = process.EventEmitter.prototype;
+Root.prototype.__proto__ = EventEmitter.prototype;
 
 Root.prototype.use = function(arg) {
 	if (typeof arg === 'function') {

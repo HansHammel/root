@@ -6,7 +6,11 @@
     "network-address": "^1.1.0",
     "protein": "^0.5.0"
   },
-  "repository": "git://github.com/HansHammel/root",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HansHammel/root.git"
+  },
+  "main": "./index.js",
   "description": "a super lightweight web framework featuring prototype mixin support and routing",
   "keywords": [
     "lightweight",

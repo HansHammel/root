@@ -6,6 +6,15 @@ It's available through npm:
 
 	npm install root
 
+[![Inline docs](http://inch-ci.org/github/HansHammel/express-markdown-root.svg?branch=master)](http://inch-ci.org/github/HansHammel/express-markdown-root)
+[![star this repo](http://githubbadges.com/star.svg?user=HansHammel&repo=express-markdown-root&style=flat&color=fff&background=007ec6)](https://github.com/HansHammel/express-markdown-root)
+[![fork this repo](http://githubbadges.com/fork.svg?user=HansHammel&repo=express-markdown-root&style=flat&color=fff&background=007ec6)](https://github.com/HansHammel/express-markdown-root/fork)
+[![david dependency](https://img.shields.io/david/HansHammel/express-markdown-root.svg)](https://david-dm.org/HansHammel/express-markdown-root)
+[![david devDependency](https://img.shields.io/david/dev/HansHammel/express-markdown-root.svg)](https://david-dm.org/HansHammel/express-markdown-root)
+[![david optionalDependency](https://img.shields.io/david/optional/HansHammel/express-markdown-root.svg)](https://david-dm.org/HansHammel/express-markdown-root)
+[![david peerDependency](https://img.shields.io/david/peer/HansHammel/express-markdown-root.svg)](https://david-dm.org/HansHammel/express-markdown-root)
+[![Known Vulnerabilities](https://snyk.io/test/github/HansHammel/express-markdown-root/badge.svg)](https://snyk.io/test/github/HansHammel/express-markdown-root)
+
 [![build status](https://secure.travis-ci.org/mafintosh/root.png)](http://travis-ci.org/mafintosh/root)
 
 ## Usage

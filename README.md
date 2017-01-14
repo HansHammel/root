@@ -6,6 +6,7 @@ It's available through npm:
 
 	npm install root
 
+[![build status](https://secure.travis-ci.org/HansHammel/root.png)](http://travis-ci.org/HansHammel/root)
 [![Inline docs](http://inch-ci.org/github/HansHammel/root.svg?branch=master)](http://inch-ci.org/github/HansHammel/root)
 [![star this repo](http://githubbadges.com/star.svg?user=HansHammel&repo=root&style=flat&color=fff&background=007ec6)](https://github.com/HansHammel/root)
 [![fork this repo](http://githubbadges.com/fork.svg?user=HansHammel&repo=root&style=flat&color=fff&background=007ec6)](https://github.com/HansHammel/root/fork)
@@ -14,8 +15,6 @@ It's available through npm:
 [![david optionalDependency](https://img.shields.io/david/optional/HansHammel/root.svg)](https://david-dm.org/HansHammel/root)
 [![david peerDependency](https://img.shields.io/david/peer/HansHammel/root.svg)](https://david-dm.org/HansHammel/root)
 [![Known Vulnerabilities](https://snyk.io/test/github/HansHammel/root/badge.svg)](https://snyk.io/test/github/HansHammel/root)
-
-[![build status](https://secure.travis-ci.org/mafintosh/root.png)](http://travis-ci.org/mafintosh/root)
 
 ## Usage
 

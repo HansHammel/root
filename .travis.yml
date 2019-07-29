@@ -2,13 +2,16 @@ language: node_js
 
 sudo: false
 
+language: node_js
+
+sudo: false
+
 branches:
   only:
     - master
     - /^greenkeeper-.*$/
 
 node_js:
-  - '7'
   - '8'
   - '9'
   - '10'
@@ -20,6 +23,21 @@ os:
   - windows
   - linux
   - osx
+
+matrix:
+  allow_failures:
+    - os: windows
+    
+env:
+  - NODE_ENV=testing
+
+cache:
+  directories:
+    - $HOME/.npm
+    - ~/.npm
+    - ~/.yarn-cache
+    - travis_phantomjs
+    - node_modules
  
 env:
   - NODE_ENV=testing

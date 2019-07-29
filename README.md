@@ -14,7 +14,7 @@ It's available through npm:
 [![david devDependency](https://img.shields.io/david/dev/HansHammel/root.svg)](https://david-dm.org/HansHammel/root)
 [![david optionalDependency](https://img.shields.io/david/optional/HansHammel/root.svg)](https://david-dm.org/HansHammel/root)
 [![david peerDependency](https://img.shields.io/david/peer/HansHammel/root.svg)](https://david-dm.org/HansHammel/root)
-[![Known Vulnerabilities](https://snyk.io/test/github/HansHammel/root/badge.svg)](https://snyk.io/test/github/HansHammel/root)
+[![Known Vulnerabilities](https://snyk.io/test/github/HansHammel/root/badge.svg)](https://snyk.io/test/github/HansHammel/root) [![Greenkeeper badge](https://badges.greenkeeper.io/HansHammel/root.svg)](https://greenkeeper.io/)
 
 ## Usage
 
